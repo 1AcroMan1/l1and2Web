@@ -1,0 +1,221 @@
+:root
+{
+--colorLC: #33CCCC; 
+--colorMC: #009999; 
+--colorDC: #006363; 
+--colorLR: #BF3030; 
+--colorMR: #FF0000; 
+--colorDR: #FF4040; 
+--colorLY: #BF8F30; 
+--colorMY: #FFAA00; 
+--colorDY: #FFBF40; 
+}
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+}
+body
+{
+    font-size: 1.2rem;
+}
+header
+{
+    font-size: 1.5rem;
+}
+nav {
+    font-size: 1.5rem;
+    <! -- border: 2px solid slategray;>
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.5s, color 0.5s;
+    }
+
+        nav a:hover {
+            background-color: var(--colorLC);
+        }
+
+.nav-item {
+    margin: 0.6rem 2rem;
+}
+
+@media screen and (max-width: 1800px) 
+{
+    nav 
+    {
+        font-size: 1.2rem;
+    }
+    nav a
+    {
+        margin: 0 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1400px) 
+{
+    nav 
+    {
+        font-size: 1rem;
+    }
+    nav a
+    {
+        margin: 0 0.2rem;
+        padding: 0.2rem 0.2rem;
+    }
+}
+
+
+
+.headbg
+{
+    width: 100%;
+    background-color:var(--colorMC);
+}
+.MainFlex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: azure;
+    width:50%;
+    margin-top:3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flexItem {
+    width: 16rem;
+    height: 16rem;
+    margin: 1rem;
+}
+.flexflex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    margin-top:3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flexflexItem{
+    width: 20%;
+    border: 1px solid black;
+    padding: 0.5vw;
+    background-color: var(--colorLY);
+    margin: 1vw;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.flexflexItem img
+{
+width:100%;
+}
+.flexflexItem:hover
+{
+background-color: var(--colorDY);
+}
+
+
+
+
+.flexflexItem:hover .tip
+{
+    visibility:visible;
+    opacity: 1;
+    text-align:center;
+}
+.flexflexItem .tip
+{
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+
+.invEle{
+    visibility: hidden;
+}
+.anchors
+{
+        margin: 1 0rem;
+        padding: 0.5rem 1rem;
+}
+.anchors a
+{
+        font-size: 1.5rem;
+        text-decoration: none;
+        background-color: var(--colorLR);
+        color: black;
+}
+.anchors a:hover {
+            background-color: var(--colorDR);
+        }
+.defaultText
+{
+display:flex;
+flex-wrap: wrap;
+flex-direction: column;
+font-size: 1.2rem;
+}
+.MiddleText
+{
+margin-left:40vw;
+font-size: 1.4rem;
+}
+table
+{
+margin-left:37vw;
+font-size: 1.2rem;
+border:1px solid black;	
+}
+table th
+{
+border:1px solid black;	
+}
+table td
+{
+border:1px solid black;		
+}
+button
+{
+background-color: var(--colorLR);
+}
+
+button:hover
+{
+background-color: var(--colorDR);
+}
+.Forms
+{
+width:14vw;
+border:1px solid black;
+background-color: var(--colorMY); 
+}
+.Forms2
+{
+width:28vw;
+border:1px solid black;
+background-color: var(--colorMY); 
+}
+.MiddleText2
+{
+margin-left:34vw;
+font-size: 1.4rem;
+}
+input, select, button
+{
+font-size:1.2rem;
+}

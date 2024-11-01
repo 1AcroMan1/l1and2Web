@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+    <script src="scr/FormsChecker.js" defer></script>
+    <title> Высшая математика. Контакты. </title>
+        <nav class="headbg">
+            <div class="nav-item"><a href="MainPage.html">Главная страница</a></div>
+            <div class="nav-item"><a href="About.html">Обо мне</a></div>
+            <div class="nav-item"><a href="MyInterests.html">Мои интересы</a></div>
+            <div class="nav-item"><a href="Learning.html">Учёба</a></div>
+            <div class="nav-item"><a href="Photos.html">Фотоальбом</a></div>
+            <div class="nav-item"><a href="Contacts.html">Контакты</a></div>
+            <div class="nav-item"><a href="DiscTest.html">Тест по дисциплине</a></div>
+        </nav>
+</head>
+<body>
+<div class="MiddleText">
+    <form class="Forms" id="form1">
+        <input id="name" type="text" placeholder="Фамилия Имя Отчество">
+        <div id="name-error" class="errText"></div>
+
+        <p class="invEle">1</p>
+        Телефон: <input id="phone" type="text" placeholder="Телефон">
+        <div id="phone-error" class="errText"></div> 
+
+        <p class="invEle">1</p>
+        <div>Пол:     
+            Мужской <input id="sex-male" type="radio" name="sex" value="Male">
+            Женский <input id="sex-female" type="radio" name="sex" value="Female">
+        </div>
+        <div id="sex-error" class="errText"></div> 
+
+        <p class="invEle">1</p>
+        Возраст: <select id="age" name="age">
+            <option value="" selected>Выберите возраст</option>
+            <option>меньше 18</option>
+            <option>18-60</option>
+            <option>60+</option>
+        </select>
+        <div id="age-error" class="errText"></div>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+</div>
+</body>
+</html>

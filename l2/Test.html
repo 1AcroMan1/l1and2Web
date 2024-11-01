@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet">
+<script src="scr/FormsChecker.js" defer></script>
+<title> Высшая математика. Тест </title>
+<h class = "MiddleText">Тест по высшей математике</h>
+<p class = "invEle">1</p>
+</head>
+<body>
+<div class="MiddleText2">
+    <form class="Forms2" id="forms2">
+        <input id="name" type="text" placeholder="ФИО">
+        <div id="name-error" class="errText"></div> <!-- Контейнер для ошибок имени -->
+        
+        <p class="invEle">1</p>
+        Группа: 
+        <select id="group" name="group">
+            <option value="" selected>Выберите группу</option>
+            <option>ИТ/б-23-1-о</option>
+            <option>ИТ/б-23-2-о</option>
+            <option>ИТ/б-23-3-о</option>
+            <option>ИТ/б-23-4-о</option>
+            <option>ИТ/б-23-5-о</option>
+            <option>ИТ/б-23-6-о</option>
+        </select>
+        <div id="group-error" class="errText"></div> <!-- Контейнер для ошибок группы -->
+
+        <p class="invEle">1</p>
+        <div>Вопрос №1</div>
+        <div>Двумерный массив также имеет название ...</div>
+        <input id="answer1" type="text" placeholder="Ответ">
+        <div id="answer1-error" class="errText"></div> <!-- Контейнер для ошибок ответа 1 -->
+
+        <p class="invEle">1</p>
+        <div>Вопрос №2</div>
+        <div>Какой формы бывают матрицы</div>
+        <div id="answer2-error" class="errText"></div> <!-- Контейнер для ошибок ответа 2 -->
+        <label>
+            <input type="checkbox" name="answer2" value="squ"> Квадратные
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="answer2" value="rec"> Прямоугольные
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="answer2" value="one"> Единичные
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="answer2" value="nul"> Нулевые
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="answer2" value="bin"> Бинарные
+        </label>
+
+        <p class="invEle">1</p>
+        <div>Вопрос №3</div>
+        <div>Выберите неверную формулу</div>
+        <select id="groups" name="Groups" multiple>
+            <option value="" selected>Выберите формулу</option>
+            <optgroup label="Свойства матриц">
+                <option value="11">A*(B*C) = (A*B)*C</option>
+                <option value="12">(A+B)*C = A*C+B*C</option>
+                <option value="13">(A-B)*C = (A-C)*B</option>
+                <option value="14">A*E = E*A = A</option>
+            </optgroup>
+            <optgroup label="Транспортирование матриц">
+                <option value="51">(k*A)^T = k * A^T</option>
+                <option value="52">(A+B)^T = A^T + B*T</option>
+                <option value="53">(A^T)^T = A</option>
+            </optgroup>
+        </select>
+        <div id="groups-error" class="errText"></div> <!-- Контейнер для ошибок вопроса 3 -->
+
+        <p class="invEle">1</p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+</div>
+</body>
+</html>
