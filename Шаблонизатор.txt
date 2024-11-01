@@ -1,0 +1,12 @@
+function templateEngine(template) {
+  let result = template;
+  if(!template)
+  {
+       result = '';
+  }
+  if (typeof(template)=='string' && typeof(template)=='int')
+    {
+        result = '';
+    }
+  return result;
+}
